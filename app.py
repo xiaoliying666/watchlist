@@ -15,7 +15,7 @@ def user_page(name):
 @app.route('/test')
 def test_url_for():
     # 下面是一些调用示例（请在命令行窗口查看输出的 URL）：
-    print(url_for('hello'))  # 输出：/home
+    print(url_for('index'))  # 输出：/home
     # 注意下面两个调用是如何生成包含 URL 变量的 URL 的
     print(url_for('user_page', name='greyli'))  # 输出：/user/greyli
     print(url_for('user_page', name='peter'))  # 输出：/user/peter
@@ -25,7 +25,7 @@ def test_url_for():
     return 'Test page'
 
 
-name = 'LiYing'
+name = 'Ben'
 movies = [
     {'title': 'My Neighbor Totoro', 'year': '1988'},
     {'title': 'Dead Poets Society', 'year': '1989'},
